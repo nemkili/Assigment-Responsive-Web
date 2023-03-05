@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #ffffff;
+			color: ##ffffff;
+			padding: 20px;
+			text-align: left
+;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		main {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+			padding: 20px;
+		}
+		.thumb {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.thumb img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			transition: transform .2s;
+		}
+		.thumb:hover img {
+			transform: scale(1.1);
+		}
+		.thumb p {
+			margin: 0;
+			padding: 10px;
+			text-align: center;
+			font-weight: bold;
+			background-color: #ffffff;
+			color: ##0000FF;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Gallery Page</h1>
+	</header>
+	<main>
+		<div class="thumb">
+			<img src="thumb1.png" alt="Image 1">
+			<p>Primer 1</p>
+		</div>
+		<div class="thumb">
+			<img src="thumb2.png" alt="Image 2">
+			<p>Primer 2</p>
+		</div>
+		<div class="thumb">
+			<img src="thumb3.png" alt="Image 3">
+			<p>Primer 3</p>
+		</div>
+		<div class="thumb">
+			<img src="thumb4.png" alt="Image 4">
+			<p>Primer 4</p>
+		</div>
+		<div class="thumb">
+			<img src="thumb5.png" alt="Image 5">
+			<p>Primer 5</p>
+		</div>
+		<div class="thumb">
+			<img src="thumb6.png" alt="Image 6">
+			<p>Primer 6</p>
+		</div>
+	</main>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor consectetur risus, id porttitor tellus consectetur vitae. Praesent convallis magna ac augue blandit, sit amet bibendum quam vehicula. Sed a sollicitudin lectus. Etiam nec tristique nisl. Aenean eget bibendum quam, vel sagittis turpis. Sed in tempor urna, at pharetra dolor. Sed tempor efficitur lorem, non lacinia nibh venenatis sit amet. Donec eu augue volutpat, rhoncus tortor sed, dictum urna.</p>
+</body>
+</html>
